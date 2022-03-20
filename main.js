@@ -78,7 +78,7 @@ const vaPar3 = document.getElementById('va3')
 const vaPar4 = document.getElementById('va4')
 
 let windowPosition;
-const divisor = 3;
+const divisor = 4;
 let resetted = false;
 
 ScrollReveal().reveal('.VA_sec', {

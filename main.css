@@ -362,12 +362,6 @@ html,
     background-image: url(assets/VA.svg);
     background-repeat: repeat no-repeat;
     will-change: background-position;
-  } #va5 {
-    position: absolute;
-    height: clamp(20rem, 15vw, 30rem);
-    z-index: -1;
-    top: calc(clamp(6rem, 10vw, 12rem)*-1);
-    opacity: 0.05;
   }
 
   .VA_sec img {
@@ -430,7 +424,7 @@ html,
     display:none;
   } .nav_ctnr {
     flex-direction: row;
-    gap: 2vw;
+    gap: 3vw;
   } .nav_ctnr a {
     border: none;
     margin: 0;
