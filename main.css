@@ -163,7 +163,7 @@ html,
   }
 
   .corner {
-    position: fixed;
+    position: absolute;
     z-index: 3;
     width: clamp(4rem, 13vw, 8rem);
   } .corner1 {
