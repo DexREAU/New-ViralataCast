@@ -142,9 +142,9 @@ html,
     font-size: clamp(1.7rem, 6vw, 2.2rem);
     gap: 2rem;
     background-image: url(assets/texture04.jpg);
-    background-size: cover;
+    background-size: 100vh;
     padding: 2rem 3rem;
-    border-bottom: 0.2rem solid var(--light);
+    border-bottom: 0.3rem solid #037;
     box-shadow: 0 3rem 3rem rgb(0 0 0 / 50%);
     transition: opacity 0.15s ease, visibility 0.15s ease, transform 0.15s ease;
     transform: translateY(-1rem);
@@ -286,7 +286,7 @@ html,
     gap: 5rem;
     width: clamp(25rem, 84vw, 78rem);
     margin: 0 auto;
-    padding: clamp(15rem, 55vw, 22rem) 0 clamp(15rem, 40vw, 20rem) 0;
+    padding: clamp(15rem, 55vw, 25rem) 0 clamp(15rem, 40vw, 22rem) 0;
     font-size: clamp(2.7rem, 8vw, 5rem);
     text-shadow: var(--txt-shadow);
   } .quote_ctnr q {
@@ -348,7 +348,7 @@ html,
 
   .VA_sec {
     width: 100%;
-    margin: clamp(5rem, 14vw, 28rem) auto;
+    margin: clamp(5rem, 18vw, 30rem) auto;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -434,15 +434,6 @@ html,
   } .nav_ctnr a {
     border: none;
     margin: 0;
-  }
-
-  
-  .corner {
-    position: absolute;
-  } .corner3 {
-    display: none;
-  } .corner4 {
-    display: none;
   }
 
   .intro_sec header {
@@ -609,15 +600,15 @@ html,
 
   @media (min-width:1920px) {
     html {
-        font-size:20px;
+        font-size:12px;
     }
   } @media (min-width:2440px) {
     html {
-        font-size:24px;
+        font-size:16px;
     }
   } @media (min-width:3000px) {
     html {
-        font-size:32px;
+        font-size:20px;
     }
   }
 
