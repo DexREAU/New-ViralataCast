@@ -130,8 +130,8 @@ html,
     text-transform: uppercase;
     padding: 5rem 0 0 0;
   } header nav {
-    position: absolute;
-    opacity:0;
+    position: fixed;
+    opacity: 0;
     visibility: hidden;
     left: 0;
     right: 0;
@@ -144,9 +144,14 @@ html,
     background-image: url(assets/texture04.jpg);
     background-size: cover;
     padding: 2rem 3rem;
-    box-shadow: 0 1rem 6rem black;
-    border-radius: 0.6rem;
-    border: 1px solid #89E;
+    border-bottom: 0.2rem solid var(--light);
+    box-shadow: 0 3rem 3rem rgb(0 0 0 / 50%);
+    transition: opacity 0.15s ease, visibility 0.15s ease, transform 0.15s ease;
+    transform: translateY(-1rem);
+  } .showing_nav {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
   } .nav_ctnr {
     display:flex;
     flex-direction: column;
@@ -197,14 +202,15 @@ html,
   .intro_content {
     margin: 6rem auto;
   } h1 {
-    font-size: clamp(5.2rem, 18vw, 11rem);
+    font-size: clamp(5.2rem, 17.5vw, 11rem);
     line-height: 0.9em;
     margin-bottom: 1rem;
     text-transform: uppercase;
   } .intro_content h2 {
     font-size: clamp(1.8rem, 6.2vw, 2.6rem);
     margin-bottom: 2rem;
-    max-width: 65rem;
+    max-width: 60rem;
+    font-weight: 400;
   }
 
 
@@ -214,7 +220,7 @@ html,
 
   .paper_doggo {
     background-image: url(assets/paper_doggo.png);
-    height: clamp(20rem, 70vw, 40rem);
+    height: clamp(20rem, 80vw, 35rem);
     width: 100%;
     margin: 0 auto;
     background-size: contain;
@@ -273,18 +279,14 @@ html,
     display:block;
   }
 
-  .showing_nav {
-    opacity: 1;
-    visibility: visible;
-  }
-
 
   .quote_ctnr {
     display: flex;
     flex-direction: column;
     gap: 5rem;
     width: clamp(25rem, 84vw, 78rem);
-    margin: clamp(15rem, 55vw, 22rem) auto clamp(15rem, 40vw, 20rem);
+    margin: 0 auto;
+    padding: clamp(15rem, 55vw, 22rem) 0 clamp(15rem, 40vw, 20rem) 0;
     font-size: clamp(2.7rem, 8vw, 5rem);
     text-shadow: var(--txt-shadow);
   } .quote_ctnr q {
@@ -313,10 +315,11 @@ html,
   .video_sec {
     /* font-size: clamp(1.7rem, 6vw, 2.1rem); */
     width: clamp(25rem, 84vw, 125rem);
-    margin: 0 auto clamp(5rem, 14vw, 28rem) auto;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: clamp(5rem, 5vw, 8rem);
+    z-index: 2;
   } .video_sec video {
     width: 100%;
     border-radius: 0.6rem;
@@ -345,12 +348,14 @@ html,
 
   .VA_sec {
     width: 100%;
+    margin: clamp(5rem, 14vw, 28rem) auto;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
     position: relative;
     box-shadow: 0 0 15rem 2rem var(--dark);
     background-color: #0000004d;
+    z-index: 1;
   } .VA_sec div {
     width: 100%;
     height: clamp(7rem, 22vw, 10rem);
@@ -373,7 +378,8 @@ html,
   }
 
   .submission_sec {
-
+    position: relative;
+    z-index: 2;
   }
 
 
@@ -418,7 +424,8 @@ html,
     padding: 0;
     position: relative;
     gap: 4vw;
-    width: clamp(45rem, calc(61vw - 10rem), 100rem);
+    width: clamp(45rem, calc(62vw - 10rem), 100rem);
+    align-self: self-end;
   } .hambt {
     display:none;
   } .nav_ctnr {
@@ -426,6 +433,7 @@ html,
     gap: 2vw;
   } .nav_ctnr a {
     border: none;
+    margin: 0;
   }
 
   
@@ -438,18 +446,20 @@ html,
   }
 
   .intro_sec header {
-    margin-bottom: 5rem;
+    margin-bottom: 5vw;
   }
 
-  .intro_flex {
+  .intro_sec {
+    border-bottom: 0.6rem solid #015;
+  } .intro_flex {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
-    gap: clamp(4rem, 4vw, 7rem);
+    gap: clamp(4rem, 5vw, 8rem);
   }
   
   .paper_doggo {
-    width: clamp(0rem, 33vw, 80rem);
+    width: clamp(0rem, 31vw, 80rem);
     height: calc(105rem - 30vw);
     background-position: right bottom;
     background-size: cover;
@@ -461,6 +471,9 @@ html,
     flex: 1;
     z-index: 1;
     margin: unset;
+  } h1 {
+    max-width: 90%;
+    font-size: clamp(10rem, 9vw, 11rem);
   }
 
   .cta_ctnr {
@@ -567,8 +580,8 @@ html,
     flex-direction: row;
   } .video_side_text > p {
     margin-bottom: 2rem;
-    font-size: clamp(2rem, 2.5vw, 2.8rem);
-    max-width: 65rem;
+    font-size: clamp(2rem, 3vw, 3.5rem);
+    max-width: 68rem;
   } .video_ctnr {
     width: clamp(40rem, 28vw, 50rem);
   }
