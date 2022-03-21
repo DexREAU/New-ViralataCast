@@ -49,7 +49,7 @@
 
             <nav>
                 <div class="nav_ctnr">
-                    <a href="#proposito">Nossa motivação</a>
+                    <a href="#proposito">Sobre o Podcast</a>
                     <a href="#indique-um-convidado">Indique um convidado</a>
                 </div>
 
@@ -59,7 +59,7 @@
 
         <div class="intro_flex">
             <div class="intro_content width1">
-                <h1>Desperte o<br>vira-lata que existe <span class="dark_text">dentro de você!</span></h1>
+                <h1><span id="h1_changing_word">Desperte o</span><span class="typing_indicator"></span><br>vira-lata que existe <span class="dark_text">dentro de você!</span></h1>
     
                 <h2>O podcast da Viralata nasceu para dar voz e visibilidade às histórias que  inspiram a seguir seus sonhos.</h2>
     
@@ -108,15 +108,17 @@
 
     <div class="video_sec">
         <div class="video_ctnr">
-            <video src="assets/video.mp4" muted loop controls poster="assets/video_cover.jpg"></video>
+            <video src="assets/video.mp4" muted loop controls poster="assets/video_cover.jpg" loading="lazy"></video>
             <p>Conhece alguém com uma história especial?</p>
-            <a href="" class="cta2">Indique um convidado!</a>
+            <a href="#indique-um-convidado" class="cta2">Indique um convidado!</a>
         </div>
 
         <div class="video_side_text">
-            <p>O brasileiro vê como negativo aquele que deveria ser o <b>ponto forte de sua origem</b>. Não existe melhor comparação: Vira-latas são conhecidos por sua <b>astúcia, resistência e adaptabilidade</b>. Não é diferente com os brasileiros. 😎</p>
+            <p>O brasileiro vê como negativo aquele que deveria ser o <b>ponto forte de sua origem</b>. Tem comparação melhor? Vira-latas são conhecidos por sua <b>astúcia, resistência e adaptabilidade</b>. Não é diferente com os brasileiros. 😎</p>
 
-            <p>Nosso propósito é te ajudar a crescer e <b>te mostrar o seu real valor</b>! Se você se interessa por histórias de desafio e superação, assista o <b>ViralataCast</b>!</p>
+            <p>Todo vira-lata tem um valor imenso. Ele não sabe de onde veio ou pra onde vai, mas sabe que tem uma missão nesse mundão: <b>fazer a diferença na vida de alguém.</b></p>
+
+            <p>Nosso propósito é te ajudar a crescer e <b>te mostrar o seu real valor</b>! Se você se interessa por histórias de desafio e superação, se liga no <b>ViralataCast</b>!</p>
     
             <div class="cta_ctnr">
                 <p><a href="" class="cta tooltip">Assista aqui</a> <span class="or_platforms">ou nas plataformas:</span></p>
@@ -143,17 +145,23 @@
     <div id="indique-um-convidado" class="submission_sec width1">
         <div class="submission_text">
             <h3>O mundo quer te ouvir, vira-lata!</h3>
-            <p>Se você é ou conhece uma pessoa que...</p>
-            <p>fez e faz diferença na vida de alguém,</p>
+            <p>Se você <b>é</b> ou <b>conhece</b> uma pessoa que...</p>
+            <span class="changing_txt">
+                <p>fez e faz diferença na vida de alguém,</p>
+            </span>
             <p>faça sua indicação!</p>
             <p>Podemos entrar em contato em breve ;)</p>
         </div>
 
-        <form id="form" name="contact" method="POST" data-netlify="true">
-            <input type="text" name="name" placeholder="Nome da pessoa inspiradora!"/>
-            <input type="text" name="contact" placeholder="Contato e/ou rede social"/>
-            <button class="send cta" type="submit">ENVIAR</button>
-        </form>
+        <div class="form_ctnr">
+            <form id="form" name="contact" method="POST" data-netlify="true">
+                <input type="text" name="name" placeholder="Nome da pessoa inspiradora!"/>
+                <input type="text" name="contact" placeholder="Contato e/ou rede social"/>
+                <button class="send cta" type="submit">ENVIAR</button>
+            </form>
+
+            <span class="submit_warning"></span>
+        </div>
     </div>
 
     <!-- <img class="corner corner3" src="assets/corner.png" alt="">

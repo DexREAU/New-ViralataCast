@@ -52,13 +52,6 @@ function toggleNav() {
 
 hambt.addEventListener('click', toggleNav)
 
-document.body.onscroll = function() {
-    if(showingNav == true) {
-        toggleNav()
-    }
-}
-
-
 if(window.matchMedia('(min-width:900px)').matches) {
 
     var cursor = document.querySelector('.cursor_light');
@@ -78,7 +71,7 @@ const vaPar3 = document.getElementById('va3')
 const vaPar4 = document.getElementById('va4')
 
 let windowPosition;
-const divisor = 3;
+const divisor = 5;
 let resetted = false;
 
 document.body.onscroll = function() {
@@ -93,4 +86,219 @@ document.body.onscroll = function() {
     
     vaPar4.style.backgroundPosition = windowPosition/-divisor + 'px 0';
 
+    
+    if(showingNav == true) {
+        toggleNav()
+    }
 }
+
+
+
+const h1ChangingTxt = document.getElementById('h1_changing_word')
+
+h1ChangingTxt.innerHTML = "";
+
+const backspaceSpeed = 60;
+const typeSpeed = 90;
+const pause = 400;
+const longPause = 3500;
+
+function typeWrite() {
+
+setTimeout(() => {
+    h1ChangingTxt.innerHTML = "D";
+    setTimeout(() => {
+        h1ChangingTxt.innerHTML = "De";
+        setTimeout(() => {
+            h1ChangingTxt.innerHTML = "Des";
+            setTimeout(() => {
+                h1ChangingTxt.innerHTML = "Desp";
+                setTimeout(() => {
+                    h1ChangingTxt.innerHTML = "Despe";
+                    setTimeout(() => {
+                        h1ChangingTxt.innerHTML = "Desper";
+                        setTimeout(() => {
+                            h1ChangingTxt.innerHTML = "Despert";
+                            setTimeout(() => {
+                                h1ChangingTxt.innerHTML = "Desperte";
+                                setTimeout(() => {
+                                    h1ChangingTxt.innerHTML = "Desperte ";
+                                    setTimeout(() => {
+                                        h1ChangingTxt.innerHTML = "Desperte o";
+                                        setTimeout(() => {
+                                            h1ChangingTxt.innerHTML = "Desperte o";
+                                        setTimeout(() => {
+                                        h1ChangingTxt.innerHTML = "Desperte ";
+                                        setTimeout(() => {
+                                        h1ChangingTxt.innerHTML = "Desperte";
+                                        setTimeout(() => {
+                                        h1ChangingTxt.innerHTML = "Despert";
+                                        setTimeout(() => {
+                                        h1ChangingTxt.innerHTML = "Desper";
+                                        setTimeout(() => {
+                                        h1ChangingTxt.innerHTML = "Despe";
+                                        setTimeout(() => {
+                                        h1ChangingTxt.innerHTML = "Desp";
+                                        setTimeout(() => {
+                                        h1ChangingTxt.innerHTML = "Des";
+                                        setTimeout(() => {
+                                        h1ChangingTxt.innerHTML = "De";
+                                        setTimeout(() => {
+                                        h1ChangingTxt.innerHTML = "D";
+                                        setTimeout(() => {
+                                        h1ChangingTxt.innerHTML = "";
+                                        setTimeout(() => {
+                                        h1ChangingTxt.innerHTML = "A";
+                                        setTimeout(() => {
+                                        h1ChangingTxt.innerHTML = "Al";
+                                        setTimeout(() => {
+                                        h1ChangingTxt.innerHTML = "Ali";
+                                        setTimeout(() => {
+                                        h1ChangingTxt.innerHTML = "Alim";
+                                        setTimeout(() => {
+                                        h1ChangingTxt.innerHTML = "Alime";
+                                        setTimeout(() => {
+                                        h1ChangingTxt.innerHTML = "Alimen";
+                                        setTimeout(() => {
+                                        h1ChangingTxt.innerHTML = "Aliment";
+                                        setTimeout(() => {
+                                        h1ChangingTxt.innerHTML = "Alimente";
+                                        setTimeout(() => {
+                                        h1ChangingTxt.innerHTML = "Alimente ";
+                                        setTimeout(() => {
+                                        h1ChangingTxt.innerHTML = "Alimente o";
+                                        setTimeout(() => {
+                                        h1ChangingTxt.innerHTML = "Alimente ";
+                                        setTimeout(() => {
+                                        h1ChangingTxt.innerHTML = "Alimente";
+                                        setTimeout(() => {
+                                        h1ChangingTxt.innerHTML = "Aliment";
+                                        setTimeout(() => {
+                                        h1ChangingTxt.innerHTML = "Alimen";
+                                        setTimeout(() => {
+                                        h1ChangingTxt.innerHTML = "Alim";
+                                        setTimeout(() => {
+                                        h1ChangingTxt.innerHTML = "Ali";
+                                        setTimeout(() => {
+                                        h1ChangingTxt.innerHTML = "Al";
+                                        setTimeout(() => {
+                                        h1ChangingTxt.innerHTML = "A";
+                                        setTimeout(() => {
+                                        h1ChangingTxt.innerHTML = "";
+                                        setTimeout(() => {
+                                        h1ChangingTxt.innerHTML = "A";
+                                        setTimeout(() => {
+                                        h1ChangingTxt.innerHTML = "Ab";
+                                        setTimeout(() => {
+                                        h1ChangingTxt.innerHTML = "Abr";
+                                        setTimeout(() => {
+                                        h1ChangingTxt.innerHTML = "Abra";
+                                        setTimeout(() => {
+                                        h1ChangingTxt.innerHTML = "Abrac";
+                                        setTimeout(() => {
+                                        h1ChangingTxt.innerHTML = "Abrace";
+                                        setTimeout(() => {
+                                        h1ChangingTxt.innerHTML = "Abrace ";
+                                        setTimeout(() => {
+                                        h1ChangingTxt.innerHTML = "Abrace o";
+                                        setTimeout(() => {
+                                        h1ChangingTxt.innerHTML = "Abrace ";
+                                        setTimeout(() => {
+                                        h1ChangingTxt.innerHTML = "Abrace";
+                                        setTimeout(() => {
+                                        h1ChangingTxt.innerHTML = "Abrac";
+                                        setTimeout(() => {
+                                        h1ChangingTxt.innerHTML = "Abra";
+                                        setTimeout(() => {
+                                            h1ChangingTxt.innerHTML = "Abr";
+                                            setTimeout(() => {
+                                                h1ChangingTxt.innerHTML = "Ab";
+                                                setTimeout(() => {
+                                                    h1ChangingTxt.innerHTML = "A";
+                                                    setTimeout(() => {
+                                                        h1ChangingTxt.innerHTML = "";
+                                        
+                                                        typeWrite()
+                                                    }, backspaceSpeed);
+                                                }, backspaceSpeed);
+                                            }, backspaceSpeed);
+                                        }, backspaceSpeed);
+                                        }, backspaceSpeed);
+                                        }, backspaceSpeed);
+                                        }, backspaceSpeed);
+                                        }, longPause);
+                                        }, typeSpeed);
+                                        }, typeSpeed);
+                                        }, typeSpeed);
+                                        }, typeSpeed);
+                                        }, typeSpeed);
+                                        }, typeSpeed);
+                                        }, typeSpeed);
+                                        }, pause);
+                                        }, backspaceSpeed);
+                                        }, backspaceSpeed);
+                                        }, backspaceSpeed);
+                                        }, backspaceSpeed);
+                                        }, backspaceSpeed);
+                                        }, backspaceSpeed);
+                                        }, backspaceSpeed);
+                                        }, backspaceSpeed);
+                                            }, longPause);
+                                        }, typeSpeed);
+                                        }, typeSpeed);
+                                        }, typeSpeed);
+                                        }, typeSpeed);
+                                        }, typeSpeed);
+                                        }, typeSpeed);
+                                        }, typeSpeed);
+                                        }, typeSpeed);
+                                        }, typeSpeed);
+                                            }, pause);
+                                        }, backspaceSpeed);
+                                        }, backspaceSpeed);
+                                        }, backspaceSpeed);
+                                        }, backspaceSpeed);
+                                        }, backspaceSpeed);
+                                        }, backspaceSpeed);
+                                        }, backspaceSpeed);
+                                        }, backspaceSpeed);
+                                        }, backspaceSpeed);
+                                        }, backspaceSpeed);
+                                        }, longPause);
+                                    }, typeSpeed);
+                                }, typeSpeed);
+                            }, typeSpeed);
+                        }, typeSpeed);
+                    }, typeSpeed);
+                }, typeSpeed);
+            }, typeSpeed);
+        }, typeSpeed);
+    }, typeSpeed);
+}, pause);
+
+    
+}
+
+typeWrite()
+
+
+
+
+
+const form = document.querySelector("form");
+const submitWarning = document.querySelector('.submit_warning')
+
+const handleSubmit = (e) => {
+    e.preventDefault();
+    let myForm = document.getElementById("pizzaOrder");
+    let formData = new FormData(myForm);
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => alert('Boa! Indicação enviada.'))
+      .catch((error) => submitWarning.innerHTML = "Boa! Indicação enviada.");
+  };
+
+form.addEventListener("submit", handleSubmit);
