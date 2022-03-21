@@ -78,26 +78,19 @@ const vaPar3 = document.getElementById('va3')
 const vaPar4 = document.getElementById('va4')
 
 let windowPosition;
-const divisor = 4;
+const divisor = 3;
 let resetted = false;
 
-ScrollReveal().reveal('.VA_sec', {
-    duration: 0,
-    opacity: 1,
-    afterReveal: function (el) {
-        resetted = false;
-        document.body.onscroll = function() {
-            windowPosition = window.pageYOffset;
+document.body.onscroll = function() {
+    windowPosition = window.pageYOffset;
 
-            
-            vaPar1.style.backgroundPosition = windowPosition/divisor + 'px 0';
-            
-            vaPar2.style.backgroundPosition = windowPosition/-divisor + 'px 0';
-            
-            vaPar3.style.backgroundPosition = windowPosition/divisor + 'px 0';
-            
-            vaPar4.style.backgroundPosition = windowPosition/-divisor + 'px 0';
-        
-        }
-    }
-});
+    
+    vaPar1.style.backgroundPosition = windowPosition/divisor + 'px 0';
+    
+    vaPar2.style.backgroundPosition = windowPosition/-divisor + 'px 0';
+    
+    vaPar3.style.backgroundPosition = windowPosition/divisor + 'px 0';
+    
+    vaPar4.style.backgroundPosition = windowPosition/-divisor + 'px 0';
+
+}
