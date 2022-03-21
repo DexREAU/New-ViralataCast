@@ -286,19 +286,28 @@ typeWrite()
 
 
 const form = document.querySelector("form");
+const formInputs = document.querySelectorAll('form input')
 const submitWarning = document.querySelector('.submit_warning')
+
+function submitSuccess() {
+    submitWarning.innerHTML = "Boa! Indicação enviada."
+
+    for(i=0;i<formInputs.length;i++) {
+        formInputs[i].value = ""
+    }
+}
 
 const handleSubmit = (e) => {
     e.preventDefault();
-    let myForm = document.getElementById("pizzaOrder");
+    let myForm = document.getElementById("form");
     let formData = new FormData(myForm);
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(formData).toString(),
     })
-      .then(() => alert('Boa! Indicação enviada.'))
-      .catch((error) => submitWarning.innerHTML = "Boa! Indicação enviada.");
+      .then(() => submitSuccess)
+      .catch((error) => alert(error));
   };
 
 form.addEventListener("submit", handleSubmit);

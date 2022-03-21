@@ -150,6 +150,7 @@ html,
     box-shadow: 0 3rem 3rem rgb(0 0 0 / 50%);
     transition: opacity 0.15s ease, visibility 0.15s ease, transform 0.15s ease;
     transform: translateY(-1rem);
+    z-index: 2;
   } .showing_nav {
     opacity: 1;
     visibility: visible;
