@@ -315,7 +315,7 @@ html,
     gap: 3rem;
     width: clamp(23rem, 84vw, 78rem);
     margin: 0 auto;
-    padding: clamp(14rem, 38vw, 25rem) 0 clamp(5rem, 10vw, 12rem) 0;
+    padding: clamp(14rem, 38vw, 23rem) 0 clamp(5rem, 10vw, 10rem) 0;
     font-size: clamp(2.7rem, 8vw, 5rem);
     text-shadow: var(--txt-shadow);
   } .quote_ctnr q {
