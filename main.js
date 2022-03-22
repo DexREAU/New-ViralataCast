@@ -98,9 +98,9 @@ const h1ChangingTxt = document.getElementById('h1_changing_word')
 
 h1ChangingTxt.innerHTML = "";
 
-const backspaceSpeed = 60;
-const typeSpeed = 80;
-const pause = 400;
+const backspaceSpeed = 70;
+const typeSpeed = 100;
+const pause = 600;
 const longPause = 3500;
 
 function typeWrite() {
