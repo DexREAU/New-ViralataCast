@@ -59,7 +59,7 @@ if(window.matchMedia('(min-width:900px)').matches) {
     document.addEventListener('mousemove', function(e){
       var x = e.clientX;
       var y = e.clientY;
-      cursor.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`
+      cursor.style.transform = `translate3d(calc(${e.clientX}px - 70%), calc(${e.clientY}px - 75%), 0)`
     });
 }
 
@@ -119,18 +119,10 @@ setTimeout(() => {
                         h1ChangingTxt.innerHTML = "Desper";
                         setTimeout(() => {
                             h1ChangingTxt.innerHTML = "Despert";
-                            setTimeout(() => {
-                                h1ChangingTxt.innerHTML = "Desperte";
-                                setTimeout(() => {
-                                    h1ChangingTxt.innerHTML = "Desperte ";
-                                    setTimeout(() => {
-                                        h1ChangingTxt.innerHTML = "Desperte o";
                                         setTimeout(() => {
-                                            h1ChangingTxt.innerHTML = "Desperte o";
-                                        setTimeout(() => {
-                                        h1ChangingTxt.innerHTML = "Desperte ";
-                                        setTimeout(() => {
-                                        h1ChangingTxt.innerHTML = "Desperte";
+                                            h1ChangingTxt.innerHTML = "Desperte";
+                                            setTimeout(() => {
+                                                h1ChangingTxt.innerHTML = "Desperte";
                                         setTimeout(() => {
                                         h1ChangingTxt.innerHTML = "Despert";
                                         setTimeout(() => {
@@ -164,11 +156,7 @@ setTimeout(() => {
                                         setTimeout(() => {
                                         h1ChangingTxt.innerHTML = "Alimente";
                                         setTimeout(() => {
-                                        h1ChangingTxt.innerHTML = "Alimente ";
-                                        setTimeout(() => {
-                                        h1ChangingTxt.innerHTML = "Alimente o";
-                                        setTimeout(() => {
-                                        h1ChangingTxt.innerHTML = "Alimente ";
+                                        h1ChangingTxt.innerHTML = "Alimente";
                                         setTimeout(() => {
                                         h1ChangingTxt.innerHTML = "Alimente";
                                         setTimeout(() => {
@@ -186,6 +174,10 @@ setTimeout(() => {
                                         setTimeout(() => {
                                         h1ChangingTxt.innerHTML = "";
                                         setTimeout(() => {
+                                        h1ChangingTxt.innerHTML = "";
+                                        setTimeout(() => {
+                                        h1ChangingTxt.innerHTML = "";
+                                        setTimeout(() => {
                                         h1ChangingTxt.innerHTML = "A";
                                         setTimeout(() => {
                                         h1ChangingTxt.innerHTML = "Ab";
@@ -198,11 +190,11 @@ setTimeout(() => {
                                         setTimeout(() => {
                                         h1ChangingTxt.innerHTML = "Abrace";
                                         setTimeout(() => {
-                                        h1ChangingTxt.innerHTML = "Abrace ";
+                                        h1ChangingTxt.innerHTML = "Abrace";
                                         setTimeout(() => {
-                                        h1ChangingTxt.innerHTML = "Abrace o";
+                                        h1ChangingTxt.innerHTML = "Abrace";
                                         setTimeout(() => {
-                                        h1ChangingTxt.innerHTML = "Abrace ";
+                                        h1ChangingTxt.innerHTML = "Abrace";
                                         setTimeout(() => {
                                         h1ChangingTxt.innerHTML = "Abrace";
                                         setTimeout(() => {
@@ -262,12 +254,8 @@ setTimeout(() => {
                                         }, backspaceSpeed);
                                         }, backspaceSpeed);
                                         }, backspaceSpeed);
-                                        }, backspaceSpeed);
-                                        }, backspaceSpeed);
                                         }, longPause);
                                     }, typeSpeed);
-                                }, typeSpeed);
-                            }, typeSpeed);
                         }, typeSpeed);
                     }, typeSpeed);
                 }, typeSpeed);
@@ -280,6 +268,76 @@ setTimeout(() => {
 }
 
 typeWrite()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const submitChangingText = document.querySelector('.changing_txt p')
+
+
+function changeSubmitText() {
+    setTimeout(() => {
+        submitChangingText.innerHTML = "começou um<br>projeto bacana,";
+        setTimeout(() => {
+            submitChangingText.innerHTML = "tem grande destaque<br>na cãomunidade,";
+            setTimeout(() => {
+                submitChangingText.innerHTML = "batalhou muito pelo<br>que tem hoje,";
+                setTimeout(() => {
+                    submitChangingText.innerHTML = "fez e faz diferença<br>na vida de alguém,";
+                    changeSubmitText()
+                }, 2500);
+            }, 2500);
+        }, 2500);
+    }, 2500);
+}
+
+
+
+changeSubmitText()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -31,6 +31,8 @@ html,
     --c1b:#3575ff;
     --c2:#f2c932;
     --c2b:#ffe451;
+    --c3:#90f5c4;
+    --c3b: #0c7d47;
 
     --txt-shadow: clamp(0.1rem, 0.7vw, 0.3rem) clamp(0.1rem, 0.7vw, 0.3rem) var(--dark);
   }
@@ -220,13 +222,13 @@ html,
     display: inline-block;
     margin-left: 0.4rem;
     border-radius: 1rem;
-    animation: blink 0.4s ease infinite alternate;
+    animation: blink 0.6s ease infinite alternate;
   } @keyframes blink {
     0% {
       opacity:1;
-    } 33% {
+    } 42% {
       opacity:1;
-    } 66% {
+    } 58% {
       opacity:0;
     } 100% {
       opacity:0;
@@ -345,8 +347,11 @@ html,
   } .video_sec video {
     width: 100%;
     border-radius: 0.6rem;
-  } .video_sec b, .submission_text b, .quote_ctnr b {
+  } .submission_text b, .quote_ctnr b {
     color:var(--c2);
+    font-weight: 600;
+  } .video_sec b {
+    color:var(--c3);
     font-weight: 600;
   } .video_ctnr {
     text-align: center;
@@ -370,7 +375,7 @@ html,
 
   .VA_sec {
     width: 100%;
-    margin: clamp(5rem, 25vw, 12rem) auto clamp(5rem, 35vw, 22rem) auto;
+    margin: clamp(5rem, 25vw, 7rem) auto clamp(5rem, 35vw, 15rem) auto;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -397,7 +402,7 @@ html,
 
   .submission_sec {
     position: relative;
-    margin-bottom: 10rem;
+    margin-bottom: 4rem;
     background: #00223166;
     padding: clamp(5rem, 10vw, 10rem) 0;
     box-shadow: 0 0rem 9rem var(--dark);
@@ -405,19 +410,20 @@ html,
     z-index: 2;
     display: flex;
     flex-direction: column;
-    gap: clamp(2rem, 6vw, 9rem);
+    gap: clamp(4rem, 6vw, 6rem);
   } .submission_text {
     font-size: clamp(2.3rem, 11.5vw, 6rem);
-    max-width: 42rem;
   } .submission_text h3 {
     color:var(--c2);
     text-transform: uppercase;
     line-height: 1em;
     display: block;
     margin-bottom: 2rem;
+    width: 42rem;
   } .submission_text p {
     line-height: 1em;
     font-size: 0.8em;
+    width: 40rem;
   } .submission_text > p:last-child {
     font-size: 0.45em;
     margin-top: 1rem;
@@ -425,11 +431,14 @@ html,
     margin: 1rem 0;
     display: block;
     line-height: 1.1em;
+    max-width: 36rem;
   } .changing_txt p {
-    background-color:var(--c1);
-    background-image: url(assets/texture04.jpg);
+    background-color:var(--c3b);
+    background-image: url(assets/texture05.jpg);
     background-size: 100vh;
     display:inline;
+  } .changing_txt p:not(:last-child) {
+    position: absolute;
   } .form_ctnr {
     display: flex;
     flex-direction: column;
@@ -623,8 +632,8 @@ html,
   }
 
   .cursor_light {
-    width: 82rem;
-    height: 58rem;
+    width: 100rem;
+    height: 70rem;
     border-radius: 100%;
     background-color: var(--c2);
     position: fixed;
