@@ -395,13 +395,13 @@ html,
     transform: skew(0deg, -1.5deg) translate3d(0,0,0);
   } .VA_sec div {
     width: 100%;
-    height: clamp(10rem, 18vw, 11rem);
+    height: clamp(7rem, 18vw, 11rem);
     background-image: url(assets/VA.svg);
     background-repeat: repeat no-repeat;
     will-change: background-position;
   } .VA_sec img {
     position: absolute;
-    width: clamp(20rem, 73vw, 33rem);
+    width: clamp(20rem, 59vw, 33rem);
     bottom: -2px;
     left: clamp(0rem, 10vw, 20rem);
   } #va1, #va3 {

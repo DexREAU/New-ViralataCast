@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>ViralataCast</title>
+  <link>https://podcast.viralata.finance</link>
+  <description>Todo vira-lata tem um valor imenso. Ele não sabe de onde veio ou pra onde vai, mas conhece seu objetivo nesse mundão: fazer a diferença na vida de alguém. Nosso propósito é te ajudar a crescer e te mostrar o seu real valor! Se você se interessa por histórias de desafio e superação, se liga no ViralataCast!</description>
+  <item>
+    <title>Mc Maha | ViralataCast #1</title>
+    <link>https://podcast.viralata.finance</link>
+    <description>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate ratione ipsa cumque, ipsam eos aliquam at illo hic? Provident assumenda facilis praesentium veritatis similique accusamus, sapiente in obcaecati ex corporis.</description>
+    <enclosure url="hhttps://podcast.viralata.finance/podcast/t1/ep1.mp3" length="2250" type="audio/mpeg" />
+  </item>
+  <item>
+    <title>Gaby Sacmis | ViralataCast #2</title>
+    <link>https://podcast.viralata.finance</link>
+    <description>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate ratione ipsa cumque, ipsam eos aliquam at illo hic? Provident assumenda facilis praesentium veritatis similique accusamus, sapiente in obcaecati ex corporis.</description>
+    <enclosure url="hhttps://podcast.viralata.finance/podcast/t1/ep2.mp3" length="2250" type="audio/mpeg" />
+  </item>
+</channel>
+
+</rss>
