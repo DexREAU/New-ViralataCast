@@ -9,13 +9,15 @@
     <title>Mc Maha | ViralataCast #1</title>
     <link>https://podcast.viralata.finance</link>
     <description>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate ratione ipsa cumque, ipsam eos aliquam at illo hic? Provident assumenda facilis praesentium veritatis similique accusamus, sapiente in obcaecati ex corporis.</description>
-    <enclosure url="hhttps://podcast.viralata.finance/podcast/t1/ep1.mp3" length="2250" type="audio/mpeg" />
+    <enclosure url="https://podcast.viralata.finance/podcast/t1/ep1.mp3" length="2250" type="audio/mpeg" />
+    <guid>e1t1-mc-maha</guid>
   </item>
   <item>
     <title>Gaby Sacmis | ViralataCast #2</title>
     <link>https://podcast.viralata.finance</link>
     <description>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate ratione ipsa cumque, ipsam eos aliquam at illo hic? Provident assumenda facilis praesentium veritatis similique accusamus, sapiente in obcaecati ex corporis.</description>
-    <enclosure url="hhttps://podcast.viralata.finance/podcast/t1/ep2.mp3" length="2250" type="audio/mpeg" />
+    <enclosure url="https://podcast.viralata.finance/podcast/t1/ep2.mp3" length="2250" type="audio/mpeg" />
+    <guid>e2t1-gaby-sacmis</guid>
   </item>
 </channel>
 
