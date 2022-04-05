@@ -401,7 +401,7 @@ html,
     will-change: background-position;
   } .VA_sec img {
     position: absolute;
-    width: clamp(20rem, 73vw, 46rem);
+    width: clamp(20rem, 73vw, 33rem);
     bottom: -2px;
     left: clamp(0rem, 10vw, 20rem);
   } #va1, #va3 {

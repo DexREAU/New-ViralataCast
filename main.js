@@ -68,7 +68,6 @@ if(window.matchMedia('(min-width:900px)').matches) {
 const vaPar1 = document.getElementById('va1')
 const vaPar2 = document.getElementById('va2')
 const vaPar3 = document.getElementById('va3')
-const vaPar4 = document.getElementById('va4')
 
 let windowPosition;
 const divisor = 5;
@@ -77,15 +76,11 @@ let resetted = false;
 document.body.onscroll = function() {
     windowPosition = window.pageYOffset;
 
-    
     vaPar1.style.backgroundPosition = windowPosition/divisor + 'px 0';
     
     vaPar2.style.backgroundPosition = windowPosition/-divisor + 'px 0';
     
     vaPar3.style.backgroundPosition = windowPosition/divisor + 'px 0';
-    
-    vaPar4.style.backgroundPosition = windowPosition/-divisor + 'px 0';
-
     
     if(showingNav == true) {
         toggleNav()
