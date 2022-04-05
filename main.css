@@ -50,6 +50,7 @@ html,
     background-color: var(--dark);
     color: var(--light);
     background-image: url(assets/texture01.jpg);
+    background-image: -webkit-image-set(url(assets/texture01.jpg) 1x, url(assets/texture01.webp) 1x);
     background-size: 18rem;
     letter-spacing: 0.15em;
     /* overflow-x: hidden;
@@ -127,6 +128,7 @@ html,
   .intro_sec {
     background-color:var(--c1);
     background-image: url(assets/texture04.jpg);
+    background-image: -webkit-image-set(url(assets/texture04.jpg) 1x, url(assets/texture04.webp) 1x);
     background-size: cover;
     position: relative;
     filter: drop-shadow(0 0 10rem var(--dark))
@@ -248,6 +250,7 @@ html,
 
   .paper_doggo {
     background-image: url(assets/paper_doggo.png);
+    background-image: -webkit-image-set(url(assets/paper_doggo.png) 1x, url(assets/paper_doggo.webp) 1x);
     height: clamp(20rem, 80vw, 35rem);
     width: 100%;
     margin: 0 auto;
@@ -443,7 +446,7 @@ html,
   } .changing_txt p {
     background-color:var(--c3b);
     background-image: url(assets/texture05.jpg);
-    background-size: 100vh;
+    background-size: 42vh;
     display:inline;
   } .changing_txt p:not(:last-child) {
     position: absolute;
