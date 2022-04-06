@@ -317,6 +317,9 @@ html,
     object-fit: contain;
   } .or_platforms {
     display:block;
+    font-size: clamp(1.8rem, 6.2vw, 2.6rem);
+    color: var(--c2b);
+    text-shadow: -2px 2px var(--darkb);
   }
 
 
