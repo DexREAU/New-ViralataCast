@@ -3,36 +3,36 @@
 
 <channel>
     <title>ViralataCast</title>
-    <link>https://podcast.viralata.finance</link>
+    <link>http://podcast.viralata.finance</link>
     <description>Todo vira-lata tem um valor imenso. Ele não sabe de onde veio ou pra onde vai, mas conhece seu objetivo nesse mundão: fazer diferença na vida de alguém. Nosso propósito é te ajudar a crescer e te mostrar o seu real valor! Se você se interessa por histórias de desafio e superação, se liga no ViralataCast!</description>
     <language>pt-br</language> 
-    <atom:link href="https://podcast.viralata.finance/podcast.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="http://podcast.viralata.finance/podcast.xml" rel="self" type="application/rss+xml"/>
 
     <itunes:owner>
         <itunes:email>team@viralata.finance</itunes:email>
         <itunes:name>Time Viralata</itunes:name>
     </itunes:owner>
-    <itunes:image href="https://podcast.viralata.finance/podcast/cover.jpg"/>
+    <itunes:image href="http://podcast.viralata.finance/podcast/cover.jpg"/>
     <itunes:author>Viralata</itunes:author>
     <itunes:explicit>no</itunes:explicit>
     <itunes:category text="Society &amp; Culture"></itunes:category>
 
     <item>
         <title>Mc Maha | ViralataCast #1</title>
-        <link>https://podcast.viralata.finance</link>
+        <link>http://podcast.viralata.finance</link>
         <description>Primeiro episódio do ViralataCast.</description>
-        <enclosure url="https://podcast.viralata.finance/podcast/t1/ep1.mp3" length="233472" type="audio/mpeg" />
-        <guid>https://podcast.viralata.finance/podcast/t1/ep1.mp3</guid>
+        <enclosure url="http://podcast.viralata.finance/podcast/t1/ep1.mp3" length="233472" type="audio/mpeg" />
+        <guid>http://podcast.viralata.finance/podcast/t1/ep1.mp3</guid>
 
         <itunes:order>1</itunes:order>
     </item>
 
     <item>
         <title>Gaby Sacmis | ViralataCast #2</title>
-        <link>https://podcast.viralata.finance</link>
+        <link>http://podcast.viralata.finance</link>
         <description>Segundo episódio do ViralataCast.</description>
-        <enclosure url="https://podcast.viralata.finance/podcast/t1/ep2.mp3" length="2250" type="audio/mpeg" />
-        <guid>https://podcast.viralata.finance/podcast/t1/ep2.mp3</guid>
+        <enclosure url="http://podcast.viralata.finance/podcast/t1/ep2.mp3" length="2250" type="audio/mpeg" />
+        <guid>http://podcast.viralata.finance/podcast/t1/ep2.mp3</guid>
         
         <itunes:order>2</itunes:order>
     </item>
