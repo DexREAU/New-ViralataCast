@@ -12,7 +12,7 @@ xmlns:media="http://search.yahoo.com/mrss/">
     <title>ViralataCast</title>
     <link>https://podcast.viralata.finance</link>
     <description>Todo vira-lata tem um valor imenso. Ele não sabe de onde veio ou pra onde vai, mas conhece seu objetivo nesse mundão: fazer diferença na vida de alguém. Nosso propósito é te ajudar a crescer e te mostrar o seu real valor! Se você se interessa por histórias de desafio e superação, se liga no ViralataCast!</description>
-    <language>pt-br</language>
+    <language>pt-br</language> 
     <atom:link href="https://podcast.viralata.finance/rss.xml" rel="self" type="application/rss+xml"/>
 
     <itunes:owner>
