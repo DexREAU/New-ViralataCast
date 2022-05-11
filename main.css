@@ -103,7 +103,9 @@ html,
   
   /* END OF GLOBAL STYLES */
 
-
+::selection {
+  background-color:#286cff;
+}
 
 
 
@@ -609,10 +611,11 @@ footer {
   } .nav_ctnr a {
     border: none;
     margin: 0;
+  } nav a {
     transition: color 0.5s ease;
-  } .nav_ctnr a:hover {
+  } nav a:hover {
     color: var(--c2b);
-    transition: color 0.2s ease;
+    transition: color 0.15s ease;
   }
 
   .intro_sec header {
