@@ -52,16 +52,6 @@ function toggleNav() {
 
 hambt.addEventListener('click', toggleNav)
 
-if(window.matchMedia('(min-width:900px)').matches) {
-
-    var cursor = document.querySelector('.cursor_light');
-    
-    document.addEventListener('mousemove', function(e){
-      var x = e.clientX;
-      var y = e.clientY;
-      cursor.style.transform = `translate3d(calc(${e.clientX}px - 70%), calc(${e.clientY}px - 75%), 0)`
-    });
-}
 
 
 
@@ -93,10 +83,11 @@ const h1ChangingTxt = document.getElementById('h1_changing_word')
 
 h1ChangingTxt.innerHTML = "";
 
-const backspaceSpeed = 60;
-const typeSpeed = 75;
-const pause = 700;
-const longPause = 3500;
+const backspaceSpeed = 50;
+const backspacePauseSpeed = 420;
+const typeSpeed = 85;
+const pause = 900;
+const longPause = 3000;
 
 function typeWrite() {
 
@@ -210,7 +201,7 @@ setTimeout(() => {
                                                 }, backspaceSpeed);
                                             }, backspaceSpeed);
                                         }, backspaceSpeed);
-                                        }, backspaceSpeed);
+                                        }, backspacePauseSpeed);
                                         }, backspaceSpeed);
                                         }, backspaceSpeed);
                                         }, longPause);
@@ -229,7 +220,7 @@ setTimeout(() => {
                                         }, backspaceSpeed);
                                         }, backspaceSpeed);
                                         }, backspaceSpeed);
-                                        }, backspaceSpeed);
+                                        }, backspacePauseSpeed);
                                             }, longPause);
                                         }, typeSpeed);
                                         }, typeSpeed);
@@ -247,7 +238,7 @@ setTimeout(() => {
                                         }, backspaceSpeed);
                                         }, backspaceSpeed);
                                         }, backspaceSpeed);
-                                        }, backspaceSpeed);
+                                        }, backspacePauseSpeed);
                                         }, backspaceSpeed);
                                         }, longPause);
                                     }, typeSpeed);

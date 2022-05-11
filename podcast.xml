@@ -1,42 +1,52 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:slash="http://purl.org/rss/1.0/modules/slash/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/">
+<rss version="2.0"
+xmlns:content="http://purl.org/rss/1.0/modules/content/"
+xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+xmlns:dc="http://purl.org/dc/elements/1.1/"
+xmlns:atom="http://www.w3.org/2005/Atom"
+xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+xmlns:media="http://search.yahoo.com/mrss/">
 
-<channel>
-    <title>ViralataCast</title>
-    <link>http://podcast.viralata.finance</link>
-    <description>Todo vira-lata tem um valor imenso. Ele não sabe de onde veio ou pra onde vai, mas conhece seu objetivo nesse mundão: fazer diferença na vida de alguém. Nosso propósito é te ajudar a crescer e te mostrar o seu real valor! Se você se interessa por histórias de desafio e superação, se liga no ViralataCast!</description>
-    <language>pt-br</language> 
-    <atom:link href="http://podcast.viralata.finance/podcast.xml" rel="self" type="application/rss+xml"/>
-
-    <itunes:owner>
-        <itunes:email>team@viralata.finance</itunes:email>
-        <itunes:name>Time Viralata</itunes:name>
-    </itunes:owner>
-    <itunes:image href="http://podcast.viralata.finance/podcast/cover.jpg"/>
-    <itunes:author>Viralata</itunes:author>
-    <itunes:explicit>no</itunes:explicit>
-    <itunes:category text="Society &amp; Culture"></itunes:category>
-
-    <item>
-        <title>Mc Maha | ViralataCast #1</title>
+    <channel>
+        <title>ViralataCast</title>
         <link>http://podcast.viralata.finance</link>
-        <description>Primeiro episódio do ViralataCast.</description>
-        <enclosure url="http://podcast.viralata.finance/podcast/t1/ep1.mp3" length="233472" type="audio/mpeg" />
-        <guid>http://podcast.viralata.finance/podcast/t1/ep1.mp3</guid>
+        <description>Todo vira-lata tem um valor imenso. Ele não sabe de onde veio ou pra onde vai, mas conhece seu objetivo nesse mundão: fazer diferença na vida de alguém. Nosso propósito é te ajudar a crescer e te mostrar o seu real valor! Se você se interessa por histórias de desafio e superação, se liga no ViralataCast!</description>
+        <language>pt-br</language> 
+        <atom:link href="http://podcast.viralata.finance/podcast.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Mon, 11 Apr 2022 00:00:01 GMT</pubDate>
 
-        <itunes:order>1</itunes:order>
-    </item>
+        <itunes:owner>
+            <itunes:email>team@viralata.finance</itunes:email>
+            <itunes:name>Time Viralata</itunes:name>
+        </itunes:owner>
+        <itunes:image href="http://podcast.viralata.finance/podcast/cover.jpg"/>
+        <itunes:author>Viralata</itunes:author>
+        <itunes:explicit>no</itunes:explicit>
+        <itunes:category text="Society &amp; Culture"></itunes:category>
 
-    <item>
-        <title>Gaby Sacmis | ViralataCast #2</title>
-        <link>http://podcast.viralata.finance</link>
-        <description>Segundo episódio do ViralataCast.</description>
-        <enclosure url="http://podcast.viralata.finance/podcast/t1/ep2.mp3" length="2250" type="audio/mpeg" />
-        <guid>http://podcast.viralata.finance/podcast/t1/ep2.mp3</guid>
-        
-        <itunes:order>2</itunes:order>
-    </item>
+        <item>
+            <title>Mc Maha | ViralataCast #1</title>
+            <link>http://podcast.viralata.finance</link>
+            <description>Primeiro episódio do ViralataCast.</description>
+            <enclosure url="http://podcast.viralata.finance/podcast/t1/ep1.mp3" length="233472" type="audio/mpeg" />
+            <guid>http://podcast.viralata.finance/podcast/t1/ep1.mp3</guid>
+            <pubDate>Mon, 11 Apr 2022 00:00:01 GMT</pubDate>
 
-</channel>
+            <itunes:order>1</itunes:order>
+        </item>
+
+        <item>
+            <title>Gaby Sacmis | ViralataCast #2</title>
+            <link>http://podcast.viralata.finance</link>
+            <description>Segundo episódio do ViralataCast.</description>
+            <enclosure url="http://podcast.viralata.finance/podcast/t1/ep2.mp3" length="2250" type="audio/mpeg" />
+            <guid>http://podcast.viralata.finance/podcast/t1/ep2.mp3</guid>
+            <pubDate>Mon, 11 Apr 2022 00:00:01 GMT</pubDate>
+            
+            <itunes:order>2</itunes:order>
+        </item>
+
+    </channel>
 
 </rss>

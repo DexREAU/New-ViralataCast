@@ -131,7 +131,6 @@ html,
     background-image: -webkit-image-set(url(assets/texture04.jpg) 1x, url(assets/texture04.webp) 1x);
     background-size: cover;
     position: relative;
-    filter: drop-shadow(0 0 10rem var(--dark))
   }
 
   header {
@@ -319,7 +318,7 @@ html,
     display:block;
     font-size: clamp(1.8rem, 6.2vw, 2.6rem);
     color: var(--c2b);
-    text-shadow: -2px 2px var(--darkb);
+    text-shadow: -2px 1px rgb(0 0 0 / 40%);
   }
 
 
@@ -384,6 +383,8 @@ html,
     margin-bottom: 1.4rem;
     text-shadow: var(--txt-shadow);
     font-size: clamp(1.9rem, 6vw, 2.3rem);
+  } video::-webkit-media-controls-fullscreen-button {
+          display: none !important;
   }
 
 
@@ -416,10 +417,8 @@ html,
 
   .submission_sec {
     position: relative;
-    margin-bottom: clamp(5rem, 10vw, 12rem);
     background: #00223166;
     padding: clamp(5rem, 10vw, 10rem) 0;
-    box-shadow: 0 0rem 9rem var(--dark);
   } .submission_ctnr {
     z-index: 2;
     display: flex;
@@ -471,7 +470,7 @@ html,
     justify-content: center;
     box-shadow: 0 0.5rem var(--c1b), 0 -0.5rem var(--c1b), 0rem 0.5rem 4rem rgba(55,155,255,0.3);
     position: sticky;
-    top: 14rem;
+    top: 3rem;
   } #form input {
     padding: 1rem 1.6rem;
     box-sizing: border-box;
@@ -524,10 +523,11 @@ footer {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  font-size: clamp(1.7rem, 5vw, 2.2rem);
+  font-size: clamp(1.7rem, 5.6vw, 2.5rem);
   gap: 2rem;
-  margin-bottom: clamp(5rem, 10vw, 8rem);
   align-items: center;
+  background: #000c1199;
+  height: clamp(55vh, 100vw, 62vh);
 } footer .logo {
   margin-bottom: clamp(2rem, 5vw, 3rem);
 } footer nav {
@@ -544,7 +544,10 @@ footer {
 }  .final_disclaimer {
   text-align: center;
   width: 90%;
-  max-width: 63rem;
+  max-width: 70rem;
+} .final_disclaimer b {
+  font-weight: 100;
+  color:var(--c3);
 }
 
 
@@ -606,10 +609,14 @@ footer {
   } .nav_ctnr a {
     border: none;
     margin: 0;
+    transition: color 0.5s ease;
+  } .nav_ctnr a:hover {
+    color: var(--c2b);
+    transition: color 0.2s ease;
   }
 
   .intro_sec header {
-    margin-bottom: 5vw;
+    margin-bottom: 4vw;
   }
   
   .intro_flex {
@@ -625,6 +632,7 @@ footer {
     background-position: right bottom;
     background-size: cover;
     min-height: 55rem;
+    margin-top: 1vw;
   }
 
   .intro_content {
@@ -711,22 +719,10 @@ footer {
     content:'Castbox'
   } .amazon_anchor::after {
     content:'Amazon Music'
-  }
-
-  .cursor_light {
-    width: 100rem;
-    height: 70rem;
-    border-radius: 100%;
-    background-color: var(--c2);
-    position: fixed;
-    pointer-events: none;
-    left: 0;
-    top: 0;
-    transform: translate(calc(-50% + 15px), -50%);
-    z-index: 1;
-    opacity: 0.04;
-    filter: blur(10rem);
-    will-change: transform;
+  } .platforms a.indisponivel {
+    opacity: 0.75;
+  } .platforms a.indisponivel::after {
+    content:'em breve!'
   }
 
   .cast_bg {
@@ -750,6 +746,8 @@ footer {
   .submission_ctnr {
     flex-direction: row;
     justify-content: center;
+  } .changing_txt {
+    margin: 0 0 1rem 0;
   }
 }
 
