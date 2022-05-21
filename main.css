@@ -615,7 +615,7 @@ footer {
   } .nav_ctnr a, footer a {
     transition: background-color 0.5s ease;
     background-color: #ffffff00;
-  } .nav_ctnr a:hover, footer a:hover {
+  } .nav_ctnr a:hover, footer a:not(.social_menu a):hover {
     transition: background-color 0.15s ease;
     background-color: #ffffff10;
   }
@@ -709,7 +709,7 @@ footer {
   }
 
   .cta::after {
-    content:'Em breve!'
+    content:'Breve!'
   } .youtube_anchor::after {
     content:'Youtube'
   } .spotify_anchor::after {
@@ -728,7 +728,7 @@ footer {
     opacity: 0.75;
     transition: opacity 0.3s ease;
   } .platforms a.indisponivel::after {
-    content:'em breve!'
+    content:'Breve!'
   } .platforms a.indisponivel:hover {
     opacity: 0.38;
   }
@@ -755,7 +755,7 @@ footer {
     flex-direction: row;
     justify-content: center;
   } .changing_txt {
-    margin: 0 0 1rem 0;
+    margin: 0 0 2rem 0;
   }
 }
 
