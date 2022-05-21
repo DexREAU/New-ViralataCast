@@ -97,7 +97,7 @@ html,
   }
 
   .width1 {
-    width: clamp(25rem, 84vw, 148rem);
+    width: clamp(25rem, 84vw, 135rem);
     margin:0 auto;
   } 
   
@@ -226,16 +226,16 @@ html,
     font-weight: 400;
   } .typing_indicator {
     height: clamp(3.8rem, 13vw, 8rem);
-    width: 0.3rem;
+    width: 0.35rem;
     background: var(--light);
     display: inline-block;
     margin-left: 0.4rem;
-    border-radius: 1rem;
-    animation: blink 0.6s ease infinite alternate;
+    border-radius: 0.1rem;
+    animation: blink 0.4s linear infinite alternate;
   } @keyframes blink {
     0% {
       opacity:1;
-    } 42% {
+    } 35% {
       opacity:1;
     } 58% {
       opacity:0;
@@ -392,7 +392,7 @@ html,
 
   .VA_sec {
     width: 100%;
-    margin: clamp(5rem, 25vw, 16rem) auto clamp(5rem, 25vw, 15rem) auto;
+    margin: clamp(5rem, 25vw, 16rem) auto clamp(5rem, 25vw, 16rem) auto;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -425,16 +425,16 @@ html,
     z-index: 2;
     display: flex;
     flex-direction: column;
-    gap: clamp(4rem, 6vw, 6rem);
+    gap: clamp(4rem, 6vw, 5rem);
   } .submission_text {
-    font-size: clamp(2.3rem, 11.5vw, 6rem);
+    font-size: clamp(2.3rem, 11.5vw, 6.5rem);
   } .submission_text h3 {
     color:var(--c2);
     text-transform: uppercase;
     line-height: 1em;
     display: block;
     margin-bottom: 2rem;
-    max-width: 42rem;
+    max-width: 48rem;
   } .submission_text p {
     line-height: 1em;
     font-size: 0.8em;
@@ -601,7 +601,7 @@ footer {
     padding: 0;
     position: relative;
     gap: 4vw;
-    width: clamp(45rem, calc(62vw - 10rem), 100rem);
+    width: clamp(45rem, calc(62vw - 10rem), 89rem);
     align-self: self-end;
   } .hambt {
     display:none;
@@ -611,11 +611,13 @@ footer {
   } .nav_ctnr a {
     border: none;
     margin: 0;
-  } nav a {
-    transition: color 0.5s ease;
-  } nav a:hover {
-    color: var(--c2b);
-    transition: color 0.15s ease;
+    padding: 0.6rem clamp(0.6rem, 1vw, 1rem);
+  } .nav_ctnr a, footer a {
+    transition: background-color 0.5s ease;
+    background-color: #ffffff00;
+  } .nav_ctnr a:hover, footer a:hover {
+    transition: background-color 0.15s ease;
+    background-color: #ffffff10;
   }
 
   .intro_sec header {
@@ -626,16 +628,16 @@ footer {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
-    gap: clamp(4rem, 5vw, 8rem);
+    gap: clamp(4rem, 7vw, 7rem);
   }
   
   .paper_doggo {
-    width: clamp(0rem, 31vw, 80rem);
-    height: calc(88rem - 20vw);
+    width: clamp(0rem, 33vw, 80rem);
+    height: calc(91rem - 20vw);
     background-position: right bottom;
     background-size: cover;
     min-height: 55rem;
-    margin-top: 1vw;
+    margin-top: -1vw;
   }
 
   .intro_content {
@@ -724,8 +726,11 @@ footer {
     content:'Amazon Music'
   } .platforms a.indisponivel {
     opacity: 0.75;
+    transition: opacity 0.3s ease;
   } .platforms a.indisponivel::after {
     content:'em breve!'
+  } .platforms a.indisponivel:hover {
+    opacity: 0.38;
   }
 
   .cast_bg {

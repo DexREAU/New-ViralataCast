@@ -83,8 +83,8 @@ const h1ChangingTxt = document.getElementById('h1_changing_word')
 
 h1ChangingTxt.innerHTML = "";
 
-const backspaceSpeed = 50;
-const backspacePauseSpeed = 420;
+const backspaceSpeed = 45;
+const backspacePauseSpeed = 380;
 const typeSpeed = 85;
 const pause = 900;
 const longPause = 3000;
